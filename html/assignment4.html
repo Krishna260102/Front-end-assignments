@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Category Selection Form</title>
+    <script>
+        // Function to toggle visibility of the "Other" input field
+        function toggleTextBox() {
+            var categorySelect = document.getElementById("category");
+            var otherOption = categorySelect.value;
+            var textBox = document.getElementById("otherText");
+
+            if (otherOption === "Other...") {
+                textBox.style.display = "block"; // Show the input field
+            } else {
+                textBox.style.display = "none"; // Hide the input field
+            }
+        }
+
+        // Function to display selected category on submit
+        function displayCategory() {
+            var selectedCategory = document.getElementById("category").value;
+            var messageDiv = document.getElementById("message");
+
+            messageDiv.innerText = "You selected: " + selectedCategory;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <!-- Category Selection Dropdown -->
+        <label for="category">Select a category:</label>
+        <select id="category" name="category" onchange="toggleTextBox()">
+            <option value="Category1">Category 1</option>
+            <option value="Category2">Category 2</option>
+            <option value="Other...">Other...</option>
+        </select><br><br>
+
+        <!-- Other Text Input (Initially Hidden) -->
+        <label for="otherText">Specify:</label>
+        <input type="text" id="otherText" name="otherText" style="display: none;"><br><br>
+
+        <!-- Submit Button -->
+        <input type="button" value="Submit" onclick="displayCategory()">
+    </form>
+
+    <!-- Message Display -->
+    <div id="message"></div>
+</body>
+</html>

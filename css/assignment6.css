@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4547e4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: fff;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #c7646c;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(80, 225, 167, 0.1);
+}
+
+.sub {
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+    font-size: small;
+}

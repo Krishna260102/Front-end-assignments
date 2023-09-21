@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+

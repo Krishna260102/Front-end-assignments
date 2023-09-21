@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Variable Color Background</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    .color-option {
+        cursor: pointer;
+        padding: 10px;
+        display: inline-block;
+        margin: 10px;
+    }
+</style>
+<script>
+    function changeBackgroundColor(color) {
+        document.body.style.backgroundColor = color;
+    }
+</script>
+</head>
+<body>
+    <h1>Select a Color</h1>
+    <div class="color-option" onclick="changeBackgroundColor('red')">Red</div>
+    <div class="color-option" onclick="changeBackgroundColor('blue')">Blue</div>
+    <div class="color-option" onclick="changeBackgroundColor('green')">Green</div>
+</body>
+</html>
